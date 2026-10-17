@@ -184,7 +184,7 @@ my-app/
 
 ```
 class PostsController < ApplicationController  def index
-> @posts = Post.where.not(published_at: nil)  # Model call  endend
+@posts = Post.where.not(published_at: nil)  # Model call  endend
 ```
 
 
@@ -197,8 +197,8 @@ class PostsController < ApplicationController  def index
 
 ```
 class Post < ApplicationRecord
->   validates :title, presence: true  # Business rules
-> end
+  validates :title, presence: true  # Business rules
+end
 ```
 
 
@@ -211,11 +211,11 @@ class Post < ApplicationRecord
 
 ```
 <% @posts.each do |post| %>  <h2>
->  <%= post.title %></h2>
->  <div>
->   <%= post.body_html %>
->  </div>
-> <% end %>
+ <%= post.title %></h2>
+ <div>
+  <%= post.body_html %>
+ </div>
+<% end %>
 ```
 
 
