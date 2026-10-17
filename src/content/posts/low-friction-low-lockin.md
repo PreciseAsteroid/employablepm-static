@@ -7,8 +7,6 @@ linkedin_url: https://lnkd.in/p/eSiWkHS8
 excerpt: "I got addicted. Not to a model. To Instinct and Muse, the assistants I run. I use them for many small actions every day. To give you a sense of scale: 339 me..."
 ---
 
-![Low friction, high lock-in](/images/low-friction-low-lockin/lockin.webp)
-
 I got addicted.
 
 Not to a model. To Instinct and Muse, the assistants I run. I use them for many small actions every day. To give you a sense of scale: 339 messages with my assistants in the last 7 days, 219 of them mine. Busiest day hit 117. I tried to expand the blast radius to the kids, assistants all interconnected. No success yet. They just ignore the nudges for now.
@@ -33,3 +31,5 @@ What is your lock-in test? If your assistant disappeared tomorrow, what would yo
 - Amir dropped the "Here's a confession:" opener when posting; the
   published post starts at "I got addicted."
 - Visual posted: media-generation-post-visual-lockin-0-cb7f1406-28a3-417c-8071-c24f51cbe5a9.webp
+
+![Low friction, high lock-in](/images/low-friction-low-lockin/lockin.webp)
