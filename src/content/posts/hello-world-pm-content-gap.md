@@ -47,6 +47,9 @@ Here's are a few topics I plan to cover:
 - **Taste > Data** – When gut feeling still wins (and how to train it)
 
 
+
+![image.png](/images/hello-world-pm-content-gap/image.png)
+
 The first Rails app I built that actually works. Gotta start somehwhere
 
 
