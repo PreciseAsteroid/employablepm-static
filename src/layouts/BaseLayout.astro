@@ -19,6 +19,13 @@ const siteName = 'Employable PM';
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     <link rel="alternate" type="application/rss+xml" title={siteName} href="/rss.xml" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E7B0GZGWFV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-E7B0GZGWFV');
+    </script>
   </head>
   <body>
     <div class="wrap">
