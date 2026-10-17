@@ -32,6 +32,8 @@ The model has 4 components:
 
 And here is how the components are tied together or pointing to each other using the DRY approach.
 
+![Mental Model Components](/images/mental-model-agent-pm/MentalModel.png)
+
 These components are nothing but markdown files I keep in an organized fashion under folders that carry the same name. It is advised to keep these in a git repo, to be able to share efficiently with others.
 
 Let's start with the leafs of that structure as they are very trivial.
@@ -82,6 +84,9 @@ By now you could see how a different flows could be tailored for strategy brains
 **The magic starts here** All the user has to do, is to invoke the super prompt by referring to it with #superPromptName, and start answering questions the agent will ask, every-time role playing a different persona.
 
 I highly recommend using dictation and answering by talking. Context is king and your best context / second ratio is while talking. Forget about order, structure or typos. the more you talk the better
+
+![Invoking the process](/images/mental-model-agent-pm/SuperPromptInvoking.png)
+
 
 Try it and I promise it will be fun discovering your new virtual colleagues.  
 
