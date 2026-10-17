@@ -1,0 +1,34 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const posts = (await getCollection('posts'))
+  .filter((p) => !p.data.draft)
+  .sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a.data.date?.valueOf() ?? 0));
+
+const fmt = (d?: Date) => (d ? d.toISOString().slice(0, 10) : '');
+---
+
+<BaseLayout
+  title="Employable PM"
+  description="Hands-on guides for product managers: AI workflows, coding agents, and building real things."
+>
+  <p class="kicker"><span class="accent">~/posts</span></p>
+  <h1>Writing</h1>
+  <ul class="post-list">
+    {
+      posts.map((post) => (
+        <li>
+          <a href={`/posts/${post.id.replace(/\.md$/, '')}/`} style="text-decoration:none;">
+            <span class="post-date">{fmt(post.data.date)}</span>
+            <span class="post-title">
+              {post.data.title}
+              {post.data.source === 'linkedin' && <span class="badge-linkedin">LinkedIn</span>}
+            </span>
+          </a>
+          {post.data.excerpt && <p class="post-excerpt">{post.data.excerpt}</p>}
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>
