@@ -7,6 +7,8 @@ linkedin_url: https://lnkd.in/p/eHXTtyDZ
 excerpt: "When it all started, I asked an agent to write a PRD for me. It came back so general it missed every nuance. Very meh. I read it twice looking for one senten..."
 ---
 
+![Context map sketch](/images/why-your-agent-writes-generic-prds/map-sketch.webp)
+
 When it all started, I asked an agent to write a PRD for me.
 It came back so general it missed every nuance. Very meh. I read it twice looking for one sentence that could only describe my product. Zero.
 
