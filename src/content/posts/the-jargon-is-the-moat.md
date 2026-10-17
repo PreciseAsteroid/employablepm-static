@@ -7,6 +7,8 @@ linkedin_url: https://lnkd.in/p/ejCjT4sc
 excerpt: "Multi-agents. Sub-agents. Harnesses. Memory layers. I keep seeing these terms thrown around, and I think they do more harm than good. They make AI sound like..."
 ---
 
+![Folders everywhere](/images/the-jargon-is-the-moat/folders.webp)
+
 Multi-agents. Sub-agents. Harnesses. Memory layers.
 
 I keep seeing these terms thrown around, and I think they do more harm than good. They make AI sound like something you need a certification for, when the day-to-day reality is much simpler.
