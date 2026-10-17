@@ -29,6 +29,9 @@ It's not just access. IDEs pack more firepower early on that the standard chat a
 
 Referencing files? Just `#file`—no endless re-attaching. Repos supercharge team sharing of processes/personas (more next post) and evolving them together.
 
+![Just reference file and stop uploading](/images/pm-sweet-spot-copilot-vscode/Pasted_image_20260129201445.png)
+
+
 But that's just the start. soon you will start accumulating more and more context in text files and you would like to share that knowledge with your team, so you could all enjoy it + create standardization for some tasks and flows (will cover these parts too, in future posts). Nothing beats sharing these files using a remote repo (usually Github)
 
 
@@ -38,8 +41,14 @@ But that's just the start. soon you will start accumulating more and more contex
 Usually your work on docs as PM is iterative. You work on a doc (with your great peer, the Coding agent) till you are satisfied with it. The IDE shows you exactly what changed with easy to read diff view that highlight exact changes instantly. In chats you don't get that.
 
 
+![red = removed, green = added. This example is code, but it will work just as nice on yr strategy doc](/images/pm-sweet-spot-copilot-vscode/Pasted_image_20260129201710.png)
+
+
 **Access to Advanced Models
 **Pick models per task: o1-pro for deep reasoning, cheap/free for quick persona chats. Budget win.
+
+![This is with my free account. but with the pro account you get the greatest and latest](/images/pm-sweet-spot-copilot-vscode/Pasted_image_20260129201747.png)
+
 
 
 **Access to CLI and SDKs
