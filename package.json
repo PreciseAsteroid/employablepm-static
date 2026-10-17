@@ -1,0 +1,1 @@
+{"dependencies":{"@astrojs/rss":"^4.0.12","astro":"^5.3.0"},"name":"employablepm-static","private":true,"scripts":{"build":"astro build","dev":"astro dev","preview":"astro preview"},"type":"module","version":"0.0.1"}
