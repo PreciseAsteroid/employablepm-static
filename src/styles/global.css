@@ -216,6 +216,6 @@ a .post-title:hover, .post-title:hover { text-decoration: underline; text-decora
 .about-avatar { width: 132px; height: 132px; border-radius: 50%; object-fit: cover; border: 3px solid var(--ink); flex-shrink: 0; }
 .about-head h1 { margin: 0; }
 @media (max-width: 640px) {
-  .about-avatar { width: 96px; height: 96px; }
-  .about-head { gap: 18px; }
+  .about-avatar { width: 110px; height: 110px; }
+  .about-head { flex-direction: column; align-items: flex-start; gap: 16px; }
 }
