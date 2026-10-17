@@ -28,16 +28,28 @@ Here's everything a blog teaches you — and why it maps directly to your work a
 1. **Front end** - Build web pages with HTML, style with CSS, add a little bit of sparkle with JavaScript and connect the UIs and forms with your data with ERB (Embedded Ruby)
 
 
+![HTML + ERB](/images/your-first-step-build-a-fullstack-blog/image.png)
+
+
 
 2. **Routes** - Defining different endpoints for the different resources. `yourendpoint/posts` for public viewing and `yourendpoint/admin/posts` to edit these posts. At the same time you will learn about CRUD operations (create, read, update, delete) and how they are exposed as REST APIs with these endpoints
+
+
+![Routes](/images/your-first-step-build-a-fullstack-blog/image_2.png)
 
 
 
 3. **Backend, logic and Databases** - modeling your entities, coming up with simple logic (e.g. required fields) and raising errors when these are not filled. As the application evolves you will need to update the database without losing all the data (Ruby calls these migration scripts)
 
 
+![DB migration](/images/your-first-step-build-a-fullstack-blog/image_3.png)
+
+
 
 4. **Authentication** - your readers need no authentication, but your `yourendpoint/admin/posts` would need protection
+
+
+![Admin is protected](/images/your-first-step-build-a-fullstack-blog/image_4.png)
 
 
 
@@ -46,6 +58,9 @@ Here's everything a blog teaches you — and why it maps directly to your work a
 6. **Push to Production** - find a name for your website, buy a URL and start hosting it somewhere. You will learn how to move your local code to the server and finally make it available for everyone to visit
 
 7. **Analytics** - don't forget adding a tracker to the application (I am using Google Analytics). It will tell you which posts were visited, from what geography and how long visitors spent on the page. It will allow you to figure out the source of your visitors — did they come directly to your website, or did they come from a post you shared on social media?
+
+
+![Google Analytics basic views](/images/your-first-step-build-a-fullstack-blog/image_5.png)
 
 
 
