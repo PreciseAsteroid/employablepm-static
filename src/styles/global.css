@@ -197,3 +197,14 @@ a .post-title:hover, .post-title:hover { text-decoration: underline; text-decora
 }
 
 .site-footer a { color: var(--muted); }
+
+/* ---- responsive ---- */
+@media (max-width: 640px) {
+  body { font-size: 17px; }
+  .wrap { padding: 0 18px 64px; }
+  .site-header { padding: 20px 0; margin-bottom: 36px; }
+  .post-list-item { padding: 22px 0; }
+  .post-title { font-size: 22px; }
+  blockquote { margin-left: 0; padding-left: 16px; }
+  pre { margin-left: -18px; margin-right: -18px; border-radius: 0; }
+}
