@@ -7,11 +7,6 @@ linkedin_url: https://lnkd.in/p/ez-54n-N
 excerpt: "Your agent guesses which files to read. Give it a map. I'll share my context principles one by one. First and simplest: a router file. One file, CONTEXT.md, ..."
 ---
 
-![Carousel page 1](/images/how-i-structure-my-context/carousel-1.png)
-![Carousel page 2](/images/how-i-structure-my-context/carousel-2.png)
-![Carousel page 3](/images/how-i-structure-my-context/carousel-3.png)
-![Carousel page 4](/images/how-i-structure-my-context/carousel-4.png)
-
 Your agent guesses which files to read. Give it a map.
 
 I'll share my context principles one by one. First and simplest: a router file.
@@ -63,3 +58,11 @@ If the task asks who can help with something, check the lists below and read ONL
 ## Notes
 - Archived from the approved draft; live post text not re-verified (no LinkedIn login in the browser).
 - Visual posted: 4-page carousel PDF (carousel.pdf), slides 1-4.
+
+![Carousel page 1](/images/how-i-structure-my-context/carousel-1.png)
+
+![Carousel page 2](/images/how-i-structure-my-context/carousel-2.png)
+
+![Carousel page 3](/images/how-i-structure-my-context/carousel-3.png)
+
+![Carousel page 4](/images/how-i-structure-my-context/carousel-4.png)
