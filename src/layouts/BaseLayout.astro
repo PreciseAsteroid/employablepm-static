@@ -5,9 +5,11 @@ interface Props {
   /** Full <title> content, composed by the page (meta_title or title). */
   title: string;
   description?: string;
+  /** Set for unlisted pages (one-pager): keep out of search engines. */
+  noindex?: boolean;
 }
 
-const { title, description } = Astro.props;
+const { title, description, noindex } = Astro.props;
 const siteName = 'Employable PM';
 ---
 
@@ -18,6 +20,7 @@ const siteName = 'Employable PM';
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="alternate" type="application/rss+xml" title={siteName} href="/rss.xml" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
