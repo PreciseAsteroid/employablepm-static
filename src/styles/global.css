@@ -219,3 +219,7 @@ a .post-title:hover, .post-title:hover { text-decoration: underline; text-decora
   .about-avatar { width: 110px; height: 110px; }
   .about-head { flex-direction: column; align-items: flex-start; gap: 16px; }
 }
+
+.profile-target { font-family: var(--mono); font-size: 13px; letter-spacing: 0.5px; color: var(--muted); margin: 8px 0 0; max-width: 520px; }
+.prose h2 { font-size: 20px; margin: 32px 0 12px; letter-spacing: -0.01em; }
+.prose li { margin-bottom: 10px; }
