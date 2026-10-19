@@ -1,0 +1,31 @@
+# Employable PM
+
+> Hands-on guides for product managers: AI workflows, coding agents, and
+> building real things. Written by Amir Baruch, Director of Product
+> Management (Geo, Maps & Agentic AI) at Stellantis.
+
+Amir Baruch brings the consumer playbook to automotive: modern, impact-based
+product practices that turn traditional teams into AI-powered builders. About
+20 years in product, mostly mobility: SAP (backend dev), TomTom, Telenav,
+Bolt (2021–2023, Geo group), Stellantis (2023–, leads 5 PMs, mapping platform
+across 12 automotive brands). Based in Spain, works remote across Europe.
+
+- LinkedIn: https://www.linkedin.com/in/amirbaruch/
+- GitHub: https://github.com/PreciseAsteroid
+
+## Posts
+
+- [The jargon is the moat](https://employablepm.com/posts/the-jargon-is-the-moat/) (2026-09-27): AI jargon (agents, harnesses, memory layers) does more harm than good; what matters is portable context in organized folders.
+- [Low friction, low lock-in](https://employablepm.com/posts/low-friction-low-lockin/) (2026-10-04): Keep context in plain markdown on GitHub so no single AI vendor holds your workflows.
+- [How I structure my context](https://employablepm.com/posts/how-i-structure-my-context/) (2026-10-12): His BotAmirContext system: one repo, structured links, every tool reads the same files.
+- [Why your agent writes generic PRDs](https://employablepm.com/posts/why-your-agent-writes-generic-prds/) (2026-10-16): Agents write generic PRDs because they lack your context; scar-first on his own experience.
+- [One metric to rule them all](https://employablepm.com/posts/one-metric-to-rule-them-all/) (2026-10-19): The Social Reckoning's MSI as Zuckerberg's OMTM (One Metric That Matters, Lean Analytics); alignment is a superpower and it's amoral.
+- [Hello world: the PM content gap](https://employablepm.com/posts/hello-world-pm-content-gap/): Why he started writing for PMs.
+- [Your first step: build a fullstack blog](https://employablepm.com/posts/your-first-step-build-a-fullstack-blog/): PMs should build; start with a fullstack blog.
+- [Mental model: the agent PM](https://employablepm.com/posts/mental-model-agent-pm/): Thinking model for PMs working with AI agents.
+- [PM sweet spot: Copilot vs VSCode](https://employablepm.com/posts/pm-sweet-spot-copilot-vscode/): Where a PM's technical sweet spot sits.
+
+## About
+
+- [About Amir](https://employablepm.com/about/): full bio, positioning, speaking (InCabin Europe keynote Sep 2026, Dataxis panel Oct 2026, PROW 2024 talk).
+- RSS: https://employablepm.com/rss.xml
