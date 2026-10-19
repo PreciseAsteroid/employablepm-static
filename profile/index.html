@@ -27,11 +27,11 @@ Problem first, experiment in loops, hands-on with prototypes and code.
 </p> <h2>Looking for</h2> <p>
 VP Product / Head of Product / CPO. Mobility, automotive,
       maps/navigation/location. Remote EU.
-</p> <p class="mono-links"> <a href="https://www.linkedin.com/in/amirbaruch/">LinkedIn</a>
+</p> <p class="mono-links"> <a href="https://www.linkedin.com/in/amirbaruch/" data-ga-event="outbound_click">LinkedIn</a>
 &nbsp;·&nbsp;
-<a href="https://github.com/PreciseAsteroid">GitHub</a>
+<a href="https://github.com/PreciseAsteroid" data-ga-event="outbound_click">GitHub</a>
 &nbsp;·&nbsp;
-<a href="/amir-baruch-cv.pdf" download>Download CV</a> </p> </div>  </main> <footer class="site-footer"> <span>&copy; Amir Baruch</span> <a href="/rss.xml">rss.xml</a> </footer> </div> <script>
+<a href="/amir-baruch-cv.pdf" download data-ga-event="file_download">Download CV</a> </p> </div>  </main> <footer class="site-footer"> <span>&copy; Amir Baruch</span> <a href="/rss.xml">rss.xml</a> </footer> </div> <script>
       (function () {
         var btn = document.getElementById('theme-toggle');
         if (!btn) return;
@@ -42,4 +42,16 @@ VP Product / Head of Product / CPO. Mobility, automotive,
           try { localStorage.setItem('epm-theme', next); } catch (e) {}
         });
       })();
+    </script> <script>
+      // GA4 click events: any link with data-ga-event fires it.
+      document.addEventListener('click', function (e) {
+        var a = e.target && e.target.closest ? e.target.closest('a[data-ga-event]') : null;
+        if (!a || typeof window.gtag !== 'function') return;
+        try {
+          window.gtag('event', a.getAttribute('data-ga-event'), {
+            link_url: a.href,
+            page_path: location.pathname,
+          });
+        } catch (err) {}
+      });
     </script> </body> </html>

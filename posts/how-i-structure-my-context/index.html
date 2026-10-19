@@ -49,4 +49,16 @@ Originally posted on LinkedIn —  <a href="https://lnkd.in/p/ez-54n-N" rel="noo
           try { localStorage.setItem('epm-theme', next); } catch (e) {}
         });
       })();
+    </script> <script>
+      // GA4 click events: any link with data-ga-event fires it.
+      document.addEventListener('click', function (e) {
+        var a = e.target && e.target.closest ? e.target.closest('a[data-ga-event]') : null;
+        if (!a || typeof window.gtag !== 'function') return;
+        try {
+          window.gtag('event', a.getAttribute('data-ga-event'), {
+            link_url: a.href,
+            page_path: location.pathname,
+          });
+        } catch (err) {}
+      });
     </script> </body> </html>
