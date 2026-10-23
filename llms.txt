@@ -25,6 +25,10 @@ across 12 automotive brands). Based in Spain, works remote across Europe.
 - [Mental model: the agent PM](https://employablepm.com/posts/mental-model-agent-pm/): Thinking model for PMs working with AI agents.
 - [PM sweet spot: Copilot vs VSCode](https://employablepm.com/posts/pm-sweet-spot-copilot-vscode/): Where a PM's technical sweet spot sits.
 
+## Talks
+
+- [Talks](https://employablepm.com/talks/): InCabin Europe keynote (Sep 2026) on in-cabin agentic AI, Dataxis panel (Oct 2026) on smart navigation, BUILD with Mapbox 2026 talk on why Stellantis chose Mapbox, PROW 2024 talk on change in automotive software.
+
 ## About
 
 - [About Amir](https://employablepm.com/about/): full bio, positioning, speaking (InCabin Europe keynote Sep 2026, Dataxis panel Oct 2026, PROW 2024 talk).
