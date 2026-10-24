@@ -54,14 +54,40 @@ Put images in `public/images/<post-slug>/` and reference them as
 
 ## Deploy
 
-The site deploys from the `gh-pages` branch (built output), not `main`.
+Verified publishing setup (2026-10-24): GitHub Pages uses **Deploy from a
+branch**, branch **`gh-pages`**, folder **`/` (root)**. It serves
+https://employablepm.com. `main` holds Astro source; pushing source to `main`
+does not publish the website. No main-to-gh-pages deployment workflow was
+present when checked. Do not assume an automatic bridge exists.
 
-1. Make changes on `main`, run `npm run build`.
-2. Copy the contents of `dist/` to the `gh-pages` branch root and push.
-   GitHub Pages serves it at https://employablepm.com within a minute or two.
+### Preserve live content before building
 
-(A `.github/workflows/deploy.yml` exists for a future Actions-based deploy;
-it can't be added via API — it needs the `workflow` token scope.)
+`main` and the live `gh-pages` output are not yet in sync. As of 2026-10-24,
+`gh-pages` includes the October 19 metric post, October 21 Trello post, and
+Talks/navigation updates missing from `main`. A full replacement with `dist/`
+built from that stale source would remove live content. This drift has not
+been repaired.
+
+1. Fetch current `main` and `gh-pages`. Check the current Pages settings and
+   workflows before choosing a publishing route.
+2. Compare the source/build with current `gh-pages`, including all live posts,
+   homepage entries, RSS items, navigation and assets. Never overwrite or
+   delete live-only content with a stale build.
+3. Until source parity is restored, base deployment changes on current
+   `gh-pages` and merge only the intended new or changed output, preserving
+   existing files and homepage/RSS entries. Inspect the complete deployment
+   diff before pushing. Alternatively, reconcile the missing source first as
+   a separately scoped change, then build and compare again.
+4. Commit approved source changes on `main`; build with `npm run build`.
+   Commit approved built-output changes to the `gh-pages` root and push that
+   branch. Keep `CNAME` and existing shared assets intact.
+5. Wait for the Pages deployment to succeed, then open the live page and
+   homepage. Check text, images, canonical URL, source links, RSS and older
+   content. A source push or successful build alone is not completion.
+
+For LinkedIn mirrors, use the actual published text and LinkedIn URL, with
+`source: linkedin` and `linkedin_url` in frontmatter. Keep the image after the
+text and the existing "Originally posted on LinkedIn" attribution.
 
 ## Design
 
