@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="he" dir="rtl" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+      try {
+        var t = localStorage.getItem('epm-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    </script>
 <meta name="robots" content="noindex, nofollow">
 <title>החלפת בתים בוולנסיה · 5–8 בדצמבר</title>
 <meta name="description" content="מחפשים החלפת בתים בוולנסיה בתאריכים 5–8 בדצמבר. מציעים בית מקסים עם 4 חדרי שינה באסטפונה, קוסטה דל סול.">
@@ -18,21 +24,22 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-E7B0GZGWFV"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","G-E7B0GZGWFV");</script>
 <style>
-:root{--paper:#F2EFE6;--ink:#0E0E0E;--acid:#C6F24E;--muted:#5A564C;--line:#D8D2C2;--grotesque:Inter,"Helvetica Neue",Helvetica,Arial,sans-serif;--mono:Consolas,"SFMono-Regular",Menlo,monospace}
+:root{--paper:#0e0e0e;--ink:#f2efe6;--acid:#c6f24e;--muted:#9a958a;--line:#2e2c28;--grotesque:Inter,"Helvetica Neue",Helvetica,Arial,sans-serif;--mono:Consolas,"SFMono-Regular",Menlo,monospace}
+[data-theme=light]{--paper:#f2efe6;--ink:#0e0e0e;--acid:#c6f24e;--muted:#5a564c;--line:#d8d2c2}
 *{box-sizing:border-box}
 html{background:var(--paper);color:var(--ink);font-family:var(--grotesque);-webkit-font-smoothing:antialiased}
 body{margin:0;line-height:1.7;font-size:18px}
 .wrap{max-width:760px;margin:0 auto;padding:0 20px 80px}
 .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:24px 0;border-bottom:2px solid var(--ink);margin-bottom:48px}
 .kicker{font-family:var(--mono);font-size:12px;letter-spacing:3px;text-transform:uppercase;margin:0}
-.kicker .accent{background:var(--acid);color:var(--ink);padding:3px 10px}
+.kicker .accent{background:var(--acid);color:#0e0e0e;padding:3px 10px}
 .lang-switch{font-family:var(--mono);font-size:13px;letter-spacing:1px;color:var(--ink);text-decoration:none;border:2px solid var(--ink);padding:6px 14px;border-radius:999px;white-space:nowrap}
-.lang-switch:hover{background:var(--acid)}
+.lang-switch:hover{background:var(--acid);color:#0e0e0e}
 h1{font-weight:800;letter-spacing:-1.5px;line-height:1.15;font-size:clamp(30px,6.5vw,48px);margin:0 0 20px}
 .lede{font-size:20px;margin:0 0 28px}
 .dates{display:flex;align-items:center;gap:14px;margin:0 0 28px;flex-wrap:wrap}
 .dates-label{font-family:var(--mono);font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--muted)}
-.dates-value{font-family:var(--mono);font-size:20px;font-weight:700;background:var(--acid);color:var(--ink);padding:6px 14px;border-radius:6px}
+.dates-value{font-family:var(--mono);font-size:20px;font-weight:700;background:var(--acid);color:#0e0e0e;padding:6px 14px;border-radius:6px}
 .body-text p{margin:0 0 20px}
 h2{font-size:clamp(24px,4vw,32px);font-weight:800;letter-spacing:-1px;margin:44px 0 18px}
 .gallery{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;outline:none;border-radius:10px}
@@ -44,7 +51,7 @@ h2{font-size:clamp(24px,4vw,32px);font-weight:800;letter-spacing:-1px;margin:44p
 @media (max-width:640px){.slide img{height:250px}}
 .gallery-ui{display:flex;align-items:center;gap:16px;margin-top:14px}
 .gal-btn{width:44px;height:44px;border-radius:50%;border:2px solid var(--ink);background:var(--paper);color:var(--ink);font-size:22px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;line-height:1;padding:0 0 3px}
-.gal-btn:hover{background:var(--acid)}
+.gal-btn:hover{background:var(--acid);color:#0e0e0e}
 #gal-counter{font-family:var(--mono);font-size:13px;letter-spacing:2px;color:var(--muted)}
 .hint{font-family:var(--mono);font-size:12px;letter-spacing:1px;color:var(--muted);margin:8px 0 0}
 .cta{margin:48px 0 0;font-size:20px;font-weight:700}
@@ -56,14 +63,22 @@ footer a:hover{color:var(--ink)}
 #lightbox img{max-width:100%;max-height:100%;border-radius:10px}
 .contact{display:flex;gap:14px;margin-top:20px;flex-wrap:wrap}
 .contact-btn{font-family:var(--mono);font-size:14px;letter-spacing:1px;color:var(--ink);text-decoration:none;border:2px solid var(--ink);padding:10px 22px;border-radius:999px;display:inline-block}
-.contact-btn:hover{background:var(--acid)}
+.contact-btn:hover{background:var(--acid);color:#0e0e0e}
+.top-actions{display:flex;align-items:center;gap:12px}
+.theme-toggle{background:none;border:1px solid var(--muted);border-radius:50%;width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;color:var(--ink);padding:0}
+.theme-toggle:hover{opacity:.75}
+.theme-toggle svg{width:15px;height:15px}
+.theme-toggle .icon-sun{display:none}
+[data-theme=dark] .theme-toggle{color:var(--acid);border-color:var(--acid)}
+[data-theme=dark] .theme-toggle .icon-sun{display:block}
+[data-theme=dark] .theme-toggle .icon-moon{display:none}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="topbar">
     <p class="kicker"><span class="accent">HOME EXCHANGE</span></p>
-    <a class="lang-switch" href="/home-exchange/en/" hreflang="en">English</a>
+    <div class="top-actions"><a class="lang-switch" href="/home-exchange/en/" hreflang="en" data-ga-event="language_switch" data-ga-label="en">English</a><button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark and light mode" title="Toggle dark / light mode"> <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg> <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg> </button></div>
   </header>
   <main>
     <h1>ולנסיאנים — מי בעניין של החלפת בתים? ☀️🌴</h1>
@@ -89,8 +104,8 @@ footer a:hover{color:var(--ink)}
     </section>
     <p class="cta">מתאים לכם? מוזמנים לכתוב לנו 💛</p>
     <div class="contact">
-      <a class="contact-btn" href="https://wa.me/491749182225" target="_blank" rel="noopener">וואטסאפ</a>
-      <a class="contact-btn" href="mailto:botamirbaruch@gmail.com">אימייל</a>
+      <a class="contact-btn" href="https://wa.me/491749182225" target="_blank" rel="noopener" data-ga-event="contact_click" data-ga-label="whatsapp">וואטסאפ</a>
+      <a class="contact-btn" href="mailto:botamirbaruch@gmail.com" data-ga-event="contact_click" data-ga-label="email">אימייל</a>
     </div>
   </main>
   <footer><a href="https://employablepm.com/">employablepm.com</a></footer>
@@ -98,6 +113,7 @@ footer a:hover{color:var(--ink)}
 <div id="lightbox" role="dialog" aria-modal="true"><img src="" alt=""></div>
 <script>
 (function(){
+  var track=function(name,params){try{if(typeof window.gtag==='function')window.gtag('event',name,params)}catch(e){}};
   var gal=document.getElementById('gallery');
   var slides=Array.prototype.slice.call(gal.querySelectorAll('.slide'));
   var counter=document.getElementById('gal-counter');
@@ -119,8 +135,8 @@ footer a:hover{color:var(--ink)}
     var i=Math.max(0,Math.min(slides.length-1,current()+d));
     slides[i].scrollIntoView({behavior:'smooth',inline:'start',block:'nearest'});
   }
-  document.getElementById('gal-next').addEventListener('click',function(){go(1)});
-  document.getElementById('gal-prev').addEventListener('click',function(){go(-1)});
+  document.getElementById('gal-next').addEventListener('click',function(){track('gallery_nav',{direction:'next',page_path:location.pathname});go(1)});
+  document.getElementById('gal-prev').addEventListener('click',function(){track('gallery_nav',{direction:'prev',page_path:location.pathname});go(-1)});
   var st;
   gal.addEventListener('scroll',function(){if(st)cancelAnimationFrame(st);st=requestAnimationFrame(update)});
   gal.addEventListener('keydown',function(e){
@@ -130,11 +146,12 @@ footer a:hover{color:var(--ink)}
   update();
   var lb=document.getElementById('lightbox');
   var lbi=lb.querySelector('img');
-  slides.forEach(function(s){
+  slides.forEach(function(s,idx){
     s.addEventListener('click',function(){
       var im=s.querySelector('img');
       lbi.src=im.src;lbi.alt=im.alt;
       lb.classList.add('open');
+      track('gallery_zoom',{photo_index:idx+1,page_path:location.pathname});
     });
   });
   function close(){lb.classList.remove('open');lbi.src=''}
@@ -142,5 +159,28 @@ footer a:hover{color:var(--ink)}
   document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
 })();
 </script>
-</body>
+<script>
+      (function () {
+        var btn = document.getElementById('theme-toggle');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          var el = document.documentElement;
+          var next = el.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+          el.setAttribute('data-theme', next);
+          try { localStorage.setItem('epm-theme', next); } catch (e) {}
+        });
+      })();
+    </script><script>
+      // GA4 click events: any link with data-ga-event fires it (no URLs or contact values in params).
+      document.addEventListener('click', function (e) {
+        var a = e.target && e.target.closest ? e.target.closest('a[data-ga-event]') : null;
+        if (!a || typeof window.gtag !== 'function') return;
+        try {
+          var params = { page_path: location.pathname };
+          var label = a.getAttribute('data-ga-label');
+          if (label) params.content_label = label;
+          window.gtag('event', a.getAttribute('data-ga-event'), params);
+        } catch (err) {}
+      });
+    </script></body>
 </html>
