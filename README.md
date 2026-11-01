@@ -94,3 +94,6 @@ text and the existing "Originally posted on LinkedIn" attribution.
 Visual language is the Acid system: paper `#F2EFE6`, ink `#0E0E0E`,
 acid `#C6F24E`. Full spec in the BotAmirContext repo at
 `identity/design-system.md`.
+
+Every page, including each language version, must include the dark/light
+toggle. See "Website pages" in that file.
