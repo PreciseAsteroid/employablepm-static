@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script>
+      try {
+        var t = localStorage.getItem('epm-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    </script><title>Low friction, high lock-in | Employable PM</title><meta name="description" content="Tools like Muse, Instinct, Grok, Copilot and the rest are very easy to start using. The friction is tiny. You just start."><link rel="canonical" href="https://employablepm.com/posts/low-friction-high-lock-in/"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Low friction, high lock-in","datePublished":"2026-11-07","description":"Tools like Muse, Instinct, Grok, Copilot and the rest are very easy to start using. The friction is tiny. You just start.","author":{"@type":"Person","name":"Amir Baruch","url":"https://employablepm.com/about/"}}</script><link rel="alternate" type="application/rss+xml" title="Employable PM" href="/rss.xml"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><script async src="https://www.googletagmanager.com/gtag/js?id=G-E7B0GZGWFV"></script><script type="module">window.dataLayer=window.dataLayer||[];function a(){dataLayer.push(arguments)}a("js",new Date);a("config","G-E7B0GZGWFV");</script><link rel="stylesheet" href="/_astro/about.1-QKKWys.css"></head> <body> <div class="wrap"> <header class="site-header"> <a class="site-name" href="/">Employable&nbsp;PM<span class="dot">.</span></a> <nav class="site-nav" aria-label="Main"> <a href="/">Posts</a> <a href="/about/">About</a> <a href="/talks/">Talks</a> <a href="/rss.xml" data-ga-event="rss_click">RSS</a> <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark and light mode" title="Toggle dark / light mode"> <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg> <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg> </button> </nav> </header> <main>  <article> <p class="kicker"> 2026-11-07 <span class="badge-linkedin">LinkedIn</span> </p> <h1>Low friction, high lock-in</h1> <div class="prose"> <p>Low friction, high lock-in.</p>
+<p>Tools like Muse, Instinct, Grok, Copilot and the rest are very easy to start using. The friction is tiny. You just start.</p>
+<p>But if you don’t take care of your context, you will find it hard to switch. Make sure the agent uses a context you can carry from vendor to vendor. Otherwise you are tied to their processes.</p>
+<p>That context should hold information about you, and the processes themselves, the steps and so on. And what you learn from each and every iteration.</p>
+<p>Leave that to the agent, and you don’t know what’s stored in it.</p>
+<p>#employablepm</p>
+<p><img src="/images/low-friction-high-lock-in/bars.webp" alt="Agent behind bars."></p> </div>  </article>  </main> <footer class="site-footer"> <span>&copy; Amir Baruch</span> <a href="/rss.xml" data-ga-event="rss_click">rss.xml</a> </footer> </div> <script>
+      (function () {
+        var btn = document.getElementById('theme-toggle');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          var el = document.documentElement;
+          var next = el.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+          el.setAttribute('data-theme', next);
+          try { localStorage.setItem('epm-theme', next); } catch (e) {}
+        });
+      })();
+    </script> <script>
+      // GA4 click events: any link with data-ga-event fires it.
+      document.addEventListener('click', function (e) {
+        var a = e.target && e.target.closest ? e.target.closest('a[data-ga-event]') : null;
+        if (!a || typeof window.gtag !== 'function') return;
+        try {
+          var params = { link_url: a.href, page_path: location.pathname };
+          var label = a.getAttribute('data-ga-label');
+          if (label) params.content_label = label;
+          window.gtag('event', a.getAttribute('data-ga-event'), params);
+        } catch (err) {}
+      });
+    </script> </body> </html>
