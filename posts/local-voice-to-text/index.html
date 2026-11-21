@@ -25,6 +25,7 @@ Originally posted on LinkedIn —  <a href="https://lnkd.in/p/eVAGNCcA" rel="noo
         });
       })();
     </script> <script>
+      // GA4 click events: any link with data-ga-event fires it.
       document.addEventListener('click', function (e) {
         var a = e.target && e.target.closest ? e.target.closest('a[data-ga-event]') : null;
         if (!a || typeof window.gtag !== 'function') return;
@@ -35,4 +36,4 @@ Originally posted on LinkedIn —  <a href="https://lnkd.in/p/eVAGNCcA" rel="noo
           window.gtag('event', a.getAttribute('data-ga-event'), params);
         } catch (err) {}
       });
-    </script> </body></html>
+    </script> </body> </html>

@@ -15,8 +15,6 @@ across 12 automotive brands). Based in Spain, works remote across Europe.
 
 ## Posts
 
-- [I was editing the prompt before I had finished thinking.](https://employablepm.com/posts/local-voice-to-text/) (2026-11-15): Local voice-to-text with Handy makes it easier to give AI more context without polishing every word first.
-
 - [The jargon is the moat](https://employablepm.com/posts/the-jargon-is-the-moat/) (2026-09-27): AI jargon (agents, harnesses, memory layers) does more harm than good; what matters is portable context in organized folders.
 - [Low friction, low lock-in](https://employablepm.com/posts/low-friction-low-lockin/) (2026-10-04): Keep context in plain markdown on GitHub so no single AI vendor holds your workflows.
 - [How I structure my context](https://employablepm.com/posts/how-i-structure-my-context/) (2026-10-12): His BotAmirContext system: one repo, structured links, every tool reads the same files.
